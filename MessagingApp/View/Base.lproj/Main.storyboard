@@ -68,6 +68,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0aW-E9-9Ui"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="EXa-qY-lCF" id="Uzl-r7-Wng"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,6 +113,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" systemColor="systemBlueColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="oqi-ye-sZo" eventType="touchUpInside" id="GtR-Nj-Ij3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -131,6 +137,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="u6B-xA-LqQ"/>
                     <connections>
+                        <outlet property="emailTextfield" destination="8xe-oq-s8G" id="ceF-bL-JMe"/>
+                        <outlet property="passwordTextfield" destination="pFA-IH-sBM" id="Rrr-L9-0Vh"/>
                         <segue destination="JwU-bB-JpB" kind="show" identifier="LoginToChat" id="Z6C-Ae-e47"/>
                     </connections>
                 </viewController>
@@ -268,6 +276,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" systemColor="systemBlueColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerPressed:" destination="euk-e9-wW5" eventType="touchUpInside" id="z99-NO-ZyG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uGm-S2-6H0"/>
@@ -283,6 +294,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="O3n-N5-br2"/>
                     <connections>
+                        <outlet property="emailTextField" destination="0je-rj-HBd" id="Fyu-bq-I9j"/>
+                        <outlet property="passwordTextField" destination="wjV-nt-9hn" id="aWb-tL-1dz"/>
                         <segue destination="JwU-bB-JpB" kind="show" identifier="RegisterToChat" id="gWV-ic-fiR"/>
                     </connections>
                 </viewController>
