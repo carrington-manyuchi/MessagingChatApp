@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  WelcomeViewController.swift
 //  MessagingApp
 //
 //  Created by Carrington Tafadzwa Manyuchi on 2022/12/10.
 //
 
+
 import UIKit
+import Foundation
 
-class ViewController: UIViewController {
-
+class WelcomeViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 

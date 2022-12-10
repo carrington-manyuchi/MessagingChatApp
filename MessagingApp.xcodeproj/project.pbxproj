@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		23CD7DD529447EB000A051C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD7DD429447EB000A051C1 /* AppDelegate.swift */; };
 		23CD7DD729447EB000A051C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD7DD629447EB000A051C1 /* SceneDelegate.swift */; };
-		23CD7DD929447EB000A051C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD7DD829447EB000A051C1 /* ViewController.swift */; };
 		23CD7DDC29447EB000A051C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CD7DDA29447EB000A051C1 /* Main.storyboard */; };
 		23CD7DDF29447EB000A051C1 /* MessagingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23CD7DDD29447EB000A051C1 /* MessagingApp.xcdatamodeld */; };
 		23CD7DE129447EB100A051C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23CD7DE029447EB100A051C1 /* Assets.xcassets */; };
 		23CD7DE429447EB100A051C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CD7DE229447EB100A051C1 /* LaunchScreen.storyboard */; };
+		23CD7DF029448AA300A051C1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD7DEF29448AA300A051C1 /* WelcomeViewController.swift */; };
+		23CD7DF229448ABF00A051C1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD7DF129448ABF00A051C1 /* RegisterViewController.swift */; };
+		23CD7DF429448AD400A051C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD7DF329448AD400A051C1 /* LoginViewController.swift */; };
+		23CD7DF629448AEE00A051C1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CD7DF529448AEE00A051C1 /* ChatViewController.swift */; };
 		F8CBB31874C5245842862484 /* Pods_MessagingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ED84693C10108B5A6E7D7 /* Pods_MessagingApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +24,15 @@
 		23CD7DD129447EB000A051C1 /* MessagingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessagingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CD7DD429447EB000A051C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23CD7DD629447EB000A051C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23CD7DD829447EB000A051C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23CD7DDB29447EB000A051C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23CD7DDE29447EB000A051C1 /* MessagingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MessagingApp.xcdatamodel; sourceTree = "<group>"; };
 		23CD7DE029447EB100A051C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23CD7DE329447EB100A051C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23CD7DE529447EB100A051C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CD7DEF29448AA300A051C1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		23CD7DF129448ABF00A051C1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		23CD7DF329448AD400A051C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23CD7DF529448AEE00A051C1 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		7DE2D5E5B8DF76A31BDABF39 /* Pods-MessagingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagingApp.release.xcconfig"; path = "Target Support Files/Pods-MessagingApp/Pods-MessagingApp.release.xcconfig"; sourceTree = "<group>"; };
 		870745FA198B3144A4A6274D /* Pods-MessagingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagingApp.debug.xcconfig"; path = "Target Support Files/Pods-MessagingApp/Pods-MessagingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A11ED84693C10108B5A6E7D7 /* Pods_MessagingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +87,10 @@
 		23CD7DEB2944844500A051C1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				23CD7DD829447EB000A051C1 /* ViewController.swift */,
+				23CD7DEF29448AA300A051C1 /* WelcomeViewController.swift */,
+				23CD7DF129448ABF00A051C1 /* RegisterViewController.swift */,
+				23CD7DF329448AD400A051C1 /* LoginViewController.swift */,
+				23CD7DF529448AEE00A051C1 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,8 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23CD7DF429448AD400A051C1 /* LoginViewController.swift in Sources */,
 				23CD7DDF29447EB000A051C1 /* MessagingApp.xcdatamodeld in Sources */,
-				23CD7DD929447EB000A051C1 /* ViewController.swift in Sources */,
+				23CD7DF229448ABF00A051C1 /* RegisterViewController.swift in Sources */,
+				23CD7DF629448AEE00A051C1 /* ChatViewController.swift in Sources */,
+				23CD7DF029448AA300A051C1 /* WelcomeViewController.swift in Sources */,
 				23CD7DD529447EB000A051C1 /* AppDelegate.swift in Sources */,
 				23CD7DD729447EB000A051C1 /* SceneDelegate.swift in Sources */,
 			);
