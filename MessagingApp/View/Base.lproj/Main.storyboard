@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="1031.7757009345794" y="90.06479481641469"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="LPh-4J-1Pu">
             <objects>
-                <viewController id="oqi-ye-sZo" sceneMemberID="viewController">
+                <viewController id="oqi-ye-sZo" customClass="LoginViewController" customModule="MessagingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2r1-8e-k5c">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,21 +130,41 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u6B-xA-LqQ"/>
+                    <connections>
+                        <segue destination="JwU-bB-JpB" kind="show" identifier="LoginToChat" id="Z6C-Ae-e47"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsi-zN-M1z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1950" y="392.65658747300216"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="hTp-aC-Mp5">
             <objects>
-                <viewController id="JwU-bB-JpB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="ywk-23-DjR">
+                <viewController id="JwU-bB-JpB" customClass="ChatViewController" customModule="MessagingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ywk-23-DjR">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MnX-Tc-TTH">
+                                <rect key="frame" x="0.0" y="88" width="428" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="719" id="1i9-tk-bm6"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="demo" id="kFQ-od-XX5">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="428" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kFQ-od-XX5" id="rL2-V5-QlD">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                             <view contentMode="scaleToFill" id="fdr-Q4-wTA">
-                                <rect key="frame" x="0.0" y="815" width="428" height="68"/>
+                                <rect key="frame" x="0.0" y="803" width="428" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usi-W8-T6T">
@@ -174,37 +194,20 @@
                                     <constraint firstItem="04D-T4-srq" firstAttribute="leading" secondItem="usi-W8-T6T" secondAttribute="trailing" constant="20" id="sRm-VK-3we"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MnX-Tc-TTH">
-                                <rect key="frame" x="0.0" y="44" width="428" height="763"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kFQ-od-XX5">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="428" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kFQ-od-XX5" id="rL2-V5-QlD">
-                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S5c-NS-poB"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="MnX-Tc-TTH" firstAttribute="leading" secondItem="S5c-NS-poB" secondAttribute="leading" id="E2b-SR-H2b"/>
-                            <constraint firstItem="fdr-Q4-wTA" firstAttribute="top" secondItem="MnX-Tc-TTH" secondAttribute="bottom" constant="566" id="V5t-WH-s8H"/>
                             <constraint firstItem="MnX-Tc-TTH" firstAttribute="top" secondItem="S5c-NS-poB" secondAttribute="top" id="cAR-gW-doc"/>
                             <constraint firstItem="S5c-NS-poB" firstAttribute="trailing" secondItem="MnX-Tc-TTH" secondAttribute="trailing" id="kix-ec-d2c"/>
-                            <constraint firstItem="fdr-Q4-wTA" firstAttribute="top" secondItem="MnX-Tc-TTH" secondAttribute="bottom" constant="8" id="wDF-lH-Civ"/>
-                            <constraint firstItem="fdr-Q4-wTA" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ywk-23-DjR" secondAttribute="bottomMargin" id="wb1-Fm-92t"/>
-                            <constraint firstAttribute="bottom" secondItem="MnX-Tc-TTH" secondAttribute="bottom" id="y4A-py-iEq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TYP-NI-Kdh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwW-z2-KUJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3175.233644859813" y="66.738660907127439"/>
+            <point key="canvasLocation" x="3689.7196261682243" y="-38.22894168466523"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="jpF-Qt-Ar4">
@@ -279,6 +282,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O3n-N5-br2"/>
+                    <connections>
+                        <segue destination="JwU-bB-JpB" kind="show" identifier="RegisterToChat" id="gWV-ic-fiR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZ3-g0-PYe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -303,6 +309,9 @@
             <point key="canvasLocation" x="131.77570093457942" y="90.06479481641469"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Z6C-Ae-e47"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <systemColor name="systemBackgroundColor">
