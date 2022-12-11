@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="66" id="KGk-i7-Jjw" customClass="MessageCell" customModule="MessagingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SxH-f8-HJM">
+                        <rect key="frame" x="10" y="10" width="333" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USv-3r-dNG">
+                                <rect key="frame" x="0.0" y="0.0" width="273" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezc-mU-ep7">
+                                        <rect key="frame" x="10" y="10" width="253" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.68627450980392157" green="0.8666666666666667" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ezc-mU-ep7" secondAttribute="trailing" constant="10" id="31b-r3-Ena"/>
+                                    <constraint firstItem="Ezc-mU-ep7" firstAttribute="leading" secondItem="USv-3r-dNG" secondAttribute="leading" constant="10" id="E5h-BW-Ds8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ezc-mU-ep7" secondAttribute="bottom" constant="10" id="Zf5-1U-Xi0"/>
+                                    <constraint firstItem="Ezc-mU-ep7" firstAttribute="top" secondItem="USv-3r-dNG" secondAttribute="top" constant="10" id="t5e-Io-wbq"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAr-Bk-A6a">
+                                <rect key="frame" x="293" y="0.0" width="40" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Q7T-3d-m9Y"/>
+                                    <constraint firstAttribute="height" constant="40" id="qgw-F6-50u"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SxH-f8-HJM" secondAttribute="bottom" constant="10" id="YuO-5L-172"/>
+                    <constraint firstAttribute="trailing" secondItem="SxH-f8-HJM" secondAttribute="trailing" constant="10" id="rcw-U4-czA"/>
+                    <constraint firstItem="SxH-f8-HJM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rwN-K7-A4z"/>
+                    <constraint firstItem="SxH-f8-HJM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="y8x-s5-LWw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="label" destination="Ezc-mU-ep7" id="JEO-hR-yoX"/>
+                <outlet property="messageBuble" destination="USv-3r-dNG" id="kmN-Ji-4NM"/>
+                <outlet property="rightImageView" destination="PAr-Bk-A6a" id="cLk-ku-YGA"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="127.90178571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
