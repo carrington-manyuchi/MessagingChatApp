@@ -177,6 +177,9 @@
                                             <constraint firstAttribute="height" constant="40" id="gKx-1z-FBX"/>
                                         </constraints>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="sendPressed:" destination="JwU-bB-JpB" eventType="touchUpInside" id="KCP-AL-0xl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -202,6 +205,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="messageTextfield" destination="usi-W8-T6T" id="R8w-RV-6fd"/>
                         <outlet property="tableView" destination="MnX-Tc-TTH" id="RCR-iA-qBh"/>
                     </connections>
                 </viewController>
