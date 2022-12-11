@@ -10,19 +10,25 @@ import CoreData
 import FirebaseCore
 import FirebaseFirestore
 import FirebaseAuth
+//import IQKeyboardManager
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    //var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         // Use Firebase library to configure APIs
         FirebaseApp.configure()
-        
         let db = Firestore.firestore()
         print(db)
+        
+        // UI with the keyboard
+       // IQKeyboardManager.shared().isEnabled = true
+        //IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         
         return true
     }
